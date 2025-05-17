@@ -1,0 +1,124 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top",
+    "position": "right",
+    "width": 24,
+    "height": "100%",
+
+    "modules-left": [
+//	"backlight",
+//	"backlight/slider",	
+        "custom/menu",
+        "custom/noti",
+        "river/tags",
+
+    ],
+  
+   "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+	"battery",
+        "pulseaudio/slider",
+        "pulseaudio",
+	"bat",        
+	"tray",
+        "network",
+        "custom/powermenu"
+    ],
+    // Modules configuration
+
+     "backlight/slider": {
+    	"min": 10,
+        "max": 100,
+        "orientation": "vertical",
+        "width": 18,
+     },
+
+
+	"backlight": {
+		"device": "intel_backlight",
+		"format": "",
+	},
+    "pulseaudio/slider": {
+        "min": 0,
+        "max": 150,
+        "orientation": "vertical",
+        "width": 18,
+    },
+
+    "custom/noti": {
+      "format":  "󰂚",
+      "on-click": "swaync-client -op",
+      "tooltip": false
+    },
+    "custom/menu": {
+        "format": "",
+        "on-click": "~/.config/rofi/launchers/type-7/launcher.sh",
+        "tooltip": false
+    },
+
+    "custom/powermenu": {
+	
+        "format": "󰐦",
+        "on-click": "sh ~/.config/rofi/powermenu/type-6/powermenu.sh",
+        "tooltip": false
+    },
+
+     "battery": {
+		"format": "{icon}",
+		"format-icons": ["<span color='#f38ba8'>󰂎</span>", "<span color='#fab387'>󰁺</span>", "<span color='#f9e2af'>󰁻</span>","<span color='#f9e2af'>󰁼</span>","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"],
+		"format-charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+		"interval": 2,
+		"tooltip": true,
+		"tooltip-format": "{capacity}%",	
+    	},
+
+"river/tags": {
+    "num-tags": 9,
+    "tag-labels": [
+	"","","","","","","","",""
+    ]
+},
+
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{:%H\n%M}",  // \n para separar horas y minutos en líneas distintas
+        "tooltip": false,
+        "rotate": 0,            // No rotar el texto
+        "on-click": "swaymsg exec wofi --show drun"
+    },
+
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "",
+        "format-ethernet": "󰈁",
+        "tooltip-format": "Network",
+        "format-linked": "󰈁",
+        "format-disconnected": "⚠"
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon}",
+        "format-bluetooth": "{icon}",
+        "format-bluetooth-muted": "󰝟 {icon}",
+        "format-muted": "󰝟",
+        "format-source": "",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    }
+}
+
+

@@ -1,0 +1,218 @@
+/*Main */
+#waybar {
+color: #a3be8c;
+border: 0px solid #a3be8c; 
+border-radius: 0px; 
+background-color: #3B4252; 
+margin-top: 60px;
+
+}
+
+
+
+
+		/*
+
+
+            Pulseaudio
+
+
+		*/
+
+#pulseaudio{
+font-family: "Symbols Nerd Font";
+font-size: 24px;                 
+font-weight: bold;                
+background-color: #4c566a;
+margin:5px;
+margin-top: 0px;
+border: none;
+padding: 5px;
+}
+
+#pulseaudio-slider {
+min-height: 10px;
+padding-top: 5px;
+min-width: 10px;
+opacity: 1;
+background-image: none;
+box-shadow: none;
+border: none;
+background-color: #4c566a;
+margin: 5px;
+margin-bottom: 0px;
+border: none;
+padding: 5px;
+}
+
+#pulseaudio-slider slider {
+padding: 0px;
+background: transparent; 
+border: none;
+border-radius: 0px;
+margin-left: 5px;
+margin-bottom: 0px;
+margin-right: 0px;
+margin-top: 4px;
+}
+
+#pulseaudio-slider trough {
+min-width: 30px;
+min-height: 90px;
+background-image: linear-gradient(to right, #3B4252, #3B4252);
+border: none;
+margin-left: 5px;
+margin-right: 5px;
+border-radius: 0px;
+}
+
+#pulseaudio-slider highlight {
+min-width: 24px;
+min-height: 0px;
+background-image: linear-gradient(to right, #a3be8c, #a3be8c); 
+border: none;
+border-radius: 0px;
+}
+
+
+
+	/*
+
+
+       tags
+
+
+	*/
+
+#tags{
+  border-radius: 0px;
+  background-color: #4c566a;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  border: none;
+
+  min-height: 50px;
+}
+
+
+#tag button{
+    color: #d8dee9;
+}
+#tags button.urgent{
+    color: #bf616a;
+}
+
+#tags button.occupied{
+    color: #89b4fa;
+}
+
+#tags button.focused {
+    color: #a3be8c;
+}
+
+
+#tags button:hover {
+    background: transparent;    
+    border: none;       
+    box-shadow: none;   
+    background: transparent; 
+    text-shadow: none;  
+}
+#tags button {
+    background: transparent;    
+    border: none;       
+    box-shadow: none;   
+    background: transparent; 
+    text-shadow: none;  
+}
+
+
+	/*
+
+Tray, Battery, Network...
+
+	*/
+#custom-noti,
+#tray,
+#battery,
+#network ,
+#clock {
+font-family: "Symbols Nerd Font Mono";
+font-size:24px;
+border-radius: 0px;
+background-color: #4c566a;
+margin-left: 5px;
+margin-bottom: 5px;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-right: 5px;
+margin-top: 5px;
+border: none;
+font-weight: bold;
+}
+
+	/*
+
+
+Custom Menus
+
+
+	*/
+
+#custom-menu {
+font-family: "Symbols Nerd Font ";
+font-size: 24px;          
+color: #4c566a;                   
+border-radius: 0px;
+background-color: #a3be8c;
+margin-left: 6px;
+margin-bottom: 5px;
+margin-right: 6px;
+margin-top: 10px;
+border: none;
+padding-top: 5px;
+padding-left: 0px;
+padding-bottom: 5px;
+min-height: 30px;
+padding:5px;
+}
+
+
+#custom-powermenu {
+font-family: "Symbols Nerd Font Mono";
+font-size: 24px;                                 
+color: #3B4252;                   
+border-radius: 0px;
+background-color: #bf616a;
+margin-left: 6px;
+margin-bottom: 10px;
+margin-right: 6px;
+margin-top: 5px;
+border: none;
+padding-bottom: 5px;
+min-height: 30px;
+padding:5px;
+}
+
+
+
+	/*
+
+
+    Tooltips
+
+
+	*/
+tooltip {
+    background-color: #3B4252; 
+    color: #a3be8c;           
+    border: 1px solid #a3be8c; 
+    border-radius: 4px;       
+}
+
+tooltip, tooltip * {
+color: #a3be8c;
+font-weight: bold;
+}
