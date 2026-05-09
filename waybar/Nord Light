@@ -1,6 +1,6 @@
 {
   "name": "Nord theme",
-  "is_dark": false,
+  "is_dark": true,
   "colors": {
     "accent-color": "#a3be8c",
     "primary-color": "#5e81ac",
